@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--Wingman0 1viewcontroller View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="Wingman01viewcontrollerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdw-Xo-pGD">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="azx-Of-hcW">
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aff-sB-u8Q"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Aff-sB-u8Q" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="130" id="LhK-SN-kmr"/>
+                            <constraint firstAttribute="bottom" secondItem="azx-Of-hcW" secondAttribute="bottom" constant="72" id="Sfo-Tw-KGZ"/>
+                            <constraint firstItem="azx-Of-hcW" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="68" id="T5z-5e-uYT"/>
+                            <constraint firstItem="qdw-Xo-pGD" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="153" id="y1Y-vb-xe8"/>
+                            <constraint firstAttribute="bottom" secondItem="qdw-Xo-pGD" secondAttribute="bottom" constant="198" id="yWP-Ge-bqD"/>
+                            <constraint firstItem="Aff-sB-u8Q" firstAttribute="top" secondItem="3" secondAttribute="top" constant="209" id="zFQ-1I-cbY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="230" y="28"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
