@@ -14,6 +14,6 @@
 
 - (void) turnOn;
 - (void) turnOff;
-+ (NSString*) isItOn;
+- (NSString*) isItOn;
 
 @end

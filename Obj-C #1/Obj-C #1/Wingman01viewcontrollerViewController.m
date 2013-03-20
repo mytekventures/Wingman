@@ -18,17 +18,28 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    MyClass* computer = [MyClass alloc];
-    [computer init];
-    
+
+    MyClass* computer = [[MyClass alloc] init];
+    [computer isItOn];
     
    /* id displayResult;
 	displayResult =[MyClass isItOn];
+    
+    
+    
     
 	[myGreeter greet];
     
 	[myGreeter free];
 	return EXIT_SUCCESS;
+    
+    
+    
+    MyClass* computer = [MyClass alloc];
+    [computer init];
+
+    
+    
     */
     
 

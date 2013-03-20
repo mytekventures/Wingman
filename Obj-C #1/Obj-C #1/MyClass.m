@@ -36,6 +36,7 @@
         isItOnString = @"YES";
     }
     return isItOnString;
+    printf("isItOnString");
 }
 
 @end
