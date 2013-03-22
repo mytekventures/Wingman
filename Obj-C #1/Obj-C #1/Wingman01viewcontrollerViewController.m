@@ -18,10 +18,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-
+    
     MyClass* computer = [[MyClass alloc] init];
     [computer isItOn];
-    
+
+        
    /* id displayResult;
 	displayResult =[MyClass isItOn];
     
@@ -50,5 +51,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 @end
