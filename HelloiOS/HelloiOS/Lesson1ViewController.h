@@ -11,15 +11,10 @@
 @interface Lesson1ViewController : UIViewController
 
 
+@property (weak, nonatomic) IBOutlet UILabel *textLabel;
 
-@property (weak, nonatomic) IBOutlet UIButton *helloButton;
 
 - (IBAction)onButtonPressed:(id)sender;
 
-
-@property (weak, nonatomic) IBOutlet UIButton *onButtonPressedButtonChangesText;
-
-
-@property (weak, nonatomic) IBOutlet UILabel *greeterLabel;
 
 @end

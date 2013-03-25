@@ -1,18 +1,21 @@
 //
-//  Lesson1ViewController.m
-//  HelloiOS
+//  CalculatorViewController.m
+//  Calculator
 //
-//  Created by Maxim Filippov on 22/03/2013.
+//  Created by Maxim Filippov on 25/03/2013.
 //  Copyright (c) 2013 Maxim Filippov. All rights reserved.
 //
 
-#import "Lesson1ViewController.h"
+#import "CalculatorViewController.h"
 
-@interface Lesson1ViewController ()
+@interface CalculatorViewController ()
 
 @end
 
-@implementation Lesson1ViewController
+@implementation CalculatorViewController
+
+@synthesize display = _display;
+
 
 - (void)viewDidLoad
 {
@@ -26,7 +29,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)onButtonPressed:(id)sender {
-    _textLabel.text = @"Greetings mighty coder!";
+
+
+
+- (IBAction)digitPressed:(UIButton* )sender
+{
+    NSString *digit = [sender currentTitle];
 }
+
 @end

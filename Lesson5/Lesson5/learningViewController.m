@@ -1,18 +1,18 @@
 //
-//  Lesson1ViewController.m
-//  HelloiOS
+//  learningViewController.m
+//  Lesson5
 //
-//  Created by Maxim Filippov on 22/03/2013.
+//  Created by Maxim Filippov on 23/03/2013.
 //  Copyright (c) 2013 Maxim Filippov. All rights reserved.
 //
 
-#import "Lesson1ViewController.h"
+#import "learningViewController.h"
 
-@interface Lesson1ViewController ()
+@interface learningViewController ()
 
 @end
 
-@implementation Lesson1ViewController
+@implementation learningViewController
 
 - (void)viewDidLoad
 {
@@ -26,7 +26,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)onButtonPressed:(id)sender {
-    _textLabel.text = @"Greetings mighty coder!";
-}
 @end

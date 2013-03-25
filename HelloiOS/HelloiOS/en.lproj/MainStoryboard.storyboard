@@ -12,9 +12,17 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTn-BB-4Gi">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="You talkin' to me?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nv1-MS-g1B">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="8Bd-ej-sDh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXP-iY-UdI">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Hello">
+                                <state key="normal" title="Say something!">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -22,35 +30,41 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onButtonPressed:" destination="2" eventType="touchUpInside" id="z5W-7x-jjj"/>
+                                    <action selector="onButtonPressed:" destination="2" eventType="touchUpInside" id="r1O-xM-I5m"/>
+                                    <segue destination="tTx-xo-m9Q" kind="modal" id="drm-uj-Owj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Will you dare press the button?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L22-gn-UYh">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="109" id="zJP-8J-bf2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.57329170229624093" green="1" blue="0.96149629488237576" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="L22-gn-UYh" firstAttribute="top" secondItem="3" secondAttribute="top" constant="61" id="JRY-Uy-Czh"/>
-                            <constraint firstItem="L22-gn-UYh" firstAttribute="centerX" secondItem="sTn-BB-4Gi" secondAttribute="centerX" type="default" id="OBr-l4-Bqm"/>
-                            <constraint firstItem="sTn-BB-4Gi" firstAttribute="top" secondItem="3" secondAttribute="top" constant="223" id="StY-Zf-mOu"/>
-                            <constraint firstItem="sTn-BB-4Gi" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="vLf-3Z-mNo"/>
+                            <constraint firstItem="VXP-iY-UdI" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="Pea-3N-Ewu"/>
+                            <constraint firstItem="nv1-MS-g1B" firstAttribute="top" secondItem="3" secondAttribute="top" constant="154" id="eUV-7c-Bfh"/>
+                            <constraint firstAttribute="bottom" secondItem="VXP-iY-UdI" secondAttribute="bottom" constant="205" id="m4b-9C-ZzC"/>
+                            <constraint firstItem="VXP-iY-UdI" firstAttribute="centerX" secondItem="nv1-MS-g1B" secondAttribute="centerX" type="default" id="r3C-1I-mLy"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="greeterLabel" destination="L22-gn-UYh" id="hbW-x0-tlH"/>
-                        <outlet property="helloButton" destination="sTn-BB-4Gi" id="vg6-Ou-3BS"/>
-                        <outlet property="onButtonPressedButtonChangesText" destination="sTn-BB-4Gi" id="2Ek-Dc-cAw"/>
+                        <outlet property="onButtonPressed" destination="VXP-iY-UdI" id="xjb-fW-BDX"/>
+                        <outlet property="textLabel" destination="nv1-MS-g1B" id="0f1-WV-api"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113" y="99"/>
+            <point key="canvasLocation" x="-526" y="136"/>
+        </scene>
+        <!--Super App View Controller - secondScreen-->
+        <scene sceneID="GJf-Q2-E4R">
+            <objects>
+                <viewController title="secondScreen" id="tTx-xo-m9Q" customClass="SuperAppViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i3N-0Q-4xp">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pee-G3-hgv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-22" y="136"/>
         </scene>
     </scenes>
     <classes>
@@ -58,13 +72,14 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/Lesson1ViewController.h"/>
             <relationships>
                 <relationship kind="action" name="onButtonPressed:"/>
-                <relationship kind="outlet" name="greeterLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="helloButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="onButtonPressedButtonChangesText" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="textLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SuperAppViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SuperAppViewController.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
