@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface wingmantestViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *anotherName;
+
+
+- (IBAction)onDismissedKeyboard:(id)sender;
+
+
+
+
 
 @end

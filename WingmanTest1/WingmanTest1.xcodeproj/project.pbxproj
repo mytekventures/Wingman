@@ -18,6 +18,7 @@
 		47494C5E1702298300987E07 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47494C5D1702298300987E07 /* Default-568h@2x.png */; };
 		47494C611702298300987E07 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47494C5F1702298300987E07 /* MainStoryboard.storyboard */; };
 		47494C641702298300987E07 /* wingmantestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47494C631702298300987E07 /* wingmantestViewController.m */; };
+		47494C7C170246D300987E07 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 47494C7B170246D300987E07 /* Model.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		47494C601702298300987E07 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		47494C621702298300987E07 /* wingmantestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wingmantestViewController.h; sourceTree = "<group>"; };
 		47494C631702298300987E07 /* wingmantestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wingmantestViewController.m; sourceTree = "<group>"; };
+		47494C7A170246D300987E07 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		47494C7B170246D300987E07 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +86,12 @@
 		47494C4D1702298300987E07 /* WingmanTest1 */ = {
 			isa = PBXGroup;
 			children = (
-				47494C561702298300987E07 /* wingmantestAppDelegate.h */,
-				47494C571702298300987E07 /* wingmantestAppDelegate.m */,
-				47494C5F1702298300987E07 /* MainStoryboard.storyboard */,
+				47494C7A170246D300987E07 /* Model.h */,
+				47494C7B170246D300987E07 /* Model.m */,
 				47494C621702298300987E07 /* wingmantestViewController.h */,
 				47494C631702298300987E07 /* wingmantestViewController.m */,
+				47494C5F1702298300987E07 /* MainStoryboard.storyboard */,
+				47494C7E170246EE00987E07 /* App delegate */,
 				47494C4E1702298300987E07 /* Supporting Files */,
 			);
 			path = WingmanTest1;
@@ -105,6 +109,15 @@
 				47494C5D1702298300987E07 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47494C7E170246EE00987E07 /* App delegate */ = {
+			isa = PBXGroup;
+			children = (
+				47494C561702298300987E07 /* wingmantestAppDelegate.h */,
+				47494C571702298300987E07 /* wingmantestAppDelegate.m */,
+			);
+			name = "App delegate";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +190,7 @@
 				47494C541702298300987E07 /* main.m in Sources */,
 				47494C581702298300987E07 /* wingmantestAppDelegate.m in Sources */,
 				47494C641702298300987E07 /* wingmantestViewController.m in Sources */,
+				47494C7C170246D300987E07 /* Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +307,7 @@
 				47494C691702298300987E07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
